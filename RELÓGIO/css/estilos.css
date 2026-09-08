@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    background: url(/imagens/coringa.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central{
+    background: rgba(255, 255, 255, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: fit-content;
+    backdrop-filter: blur(2px);
+}
+
+.central div{
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 120px;
+}
+
+.central span{
+    font-size: 120px;
+    color: white;
+}

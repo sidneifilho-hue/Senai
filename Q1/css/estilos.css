@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    background: linear-gradient(cyan,darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.central{
+    background: white;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagem{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.imagem img{
+    height: 250px;
+}
+.botoes button{
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprega+ | Oportunidades</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <a href="index.html" class="logo" title="Voltar para a página inicial">
+            <span class="logo-icon">E</span>Emprega<span>+</span>
+        </a>
+
+        <nav>
+            <button class="nav-item active" data-page="inicio">⌂ Início</button>
+            <button class="nav-item" data-page="vagas">▣ Vagas</button>
+            <button class="nav-item" data-page="freelancer">◈ Freelancer</button>
+            <button class="nav-item" data-page="cursos">▤ Cursos</button>
+            <button class="nav-item" data-page="curriculo">▧ Currículo</button>
+            <button class="nav-item" data-page="empresas">▦ Empresas</button>
+            <button class="nav-item" data-page="suporte">🎧 Suporte</button>
+        </nav>
+
+        <button class="nav-item sair" id="sair">↪ Sair</button>
+    </aside>
+
+    <main class="conteudo">
+        <header class="topbar">
+            <button id="menuMobile" class="menu-mobile">☰</button>
+            <h3 id="tituloPagina">Início</h3>
+            <button class="usuario" data-page="perfil" title="Meu perfil">SN</button>
+        </header>
+
+        <section id="pagina">
+
+            <div class="hero">
+                <div class="hero-texto">
+                    <span class="etiqueta">SUA CARREIRA COMEÇA AQUI</span>
+
+                    <h1>
+                        Conectando pessoas,
+                        <span>oportunidades</span>
+                        e negócios.
+                    </h1>
+
+                    <p>
+                        Encontre empregos, trabalhos freelancer e cursos
+                        para desenvolver sua carreira profissional.
+                    </p>
+
+                    <form id="formBusca" class="busca">
+                        <input
+                            type="search"
+                            id="buscaInicial"
+                            placeholder="Cargo ou palavra-chave"
+                        >
+                        <input
+                            type="text"
+                            id="cidadeInicial"
+                            placeholder="Cidade ou região"
+                        >
+                        <button class="btn azul" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="hero-imagem">
+                    <div class="circulo">👩🏽‍💻</div>
+                    <div class="info flutuante1">
+                        Vagas disponíveis
+                        <strong>1.245</strong>
+                    </div>
+                    <div class="info flutuante2">
+                        Cursos gratuitos
+                        <strong>87</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo-secao">
+                <h2>Explore o Conecta+</h2>
+            </div>
+
+            <div class="categorias">
+                <button class="categoria" data-page="vagas">
+                    <span>💼</span>
+                    <div>
+                        <strong>Vagas CLT</strong>
+                        <p>Empregos e oportunidades</p>
+                    </div>
+                </button>
+
+                <button class="categoria" data-page="freelancer">
+                    <span>💻</span>
+                    <div>
+                        <strong>Freelancer</strong>
+                        <p>Trabalhe por projetos</p>
+                    </div>
+                </button>
+
+                <button class="categoria" data-page="cursos">
+                    <span>🎓</span>
+                    <div>
+                        <strong>Cursos</strong>
+                        <p>Aprenda novas habilidades</p>
+                    </div>
+                </button>
+
+                <button class="categoria" data-page="curriculo">
+                    <span>📄</span>
+                    <div>
+                        <strong>Currículo</strong>
+                        <p>Crie seu currículo</p>
+                    </div>
+                </button>
+            </div>
+
+            <div class="banner">
+                <div>
+                    <h2>Não sabe fazer um currículo?</h2>
+                    <p>Crie seu currículo profissional em poucos minutos.</p>
+                </div>
+                <button class="btn branco" data-page="curriculo">
+                    Criar meu currículo
+                </button>
+            </div>
+
+            <div class="titulo-secao">
+                <h2>🔥 Vagas recentes</h2>
+                <button class="link-btn" data-page="vagas">
+                    Ver todas →
+                </button>
+            </div>
+
+            <div id="vagasRecentes" class="lista-vagas"></div>
+
+        </section>
+    </main>
+
+    <div id="mensagem" class="mensagem"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

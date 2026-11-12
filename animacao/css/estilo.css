@@ -1,0 +1,26 @@
+#caixa{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(orange, black);
+    border-radius: 50%;
+    margin-top: 150px;
+}
+
+.bolaPular{
+    animation: pulo 1s infinite;
+}
+
+@keyframes pulo{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-60px)
+    }
+
+    100%{
+    transform:translateY(0);
+    }
+
+}
